@@ -1,0 +1,13 @@
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\bin\Debug\netcoreapp3.1\circustrein.exe
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\bin\Debug\netcoreapp3.1\circustrein.deps.json
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\bin\Debug\netcoreapp3.1\circustrein.runtimeconfig.json
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\bin\Debug\netcoreapp3.1\circustrein.runtimeconfig.dev.json
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\bin\Debug\netcoreapp3.1\circustrein.dll
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\bin\Debug\netcoreapp3.1\circustrein.pdb
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.csprojAssemblyReference.cache
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.csproj.CoreCompileInputs.cache
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.AssemblyInfoInputs.cache
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.AssemblyInfo.cs
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.dll
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.pdb
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.genruntimeconfig.cache
