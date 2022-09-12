@@ -6,7 +6,7 @@ namespace Classen.Enum
 {
     public enum Dieet
     {
-        carnivor,
+        carnivor ,
         herbivoor
     }
 }

@@ -6,8 +6,8 @@ namespace Classen.Enum
 {
         public enum Size
         {
-            large,
-            medium,
-            smal
+            large = 5,
+            medium = 3,
+            smal =1
         }
 }

@@ -4,7 +4,7 @@ using System.Text;
 using Classen.Enum;
 namespace Classen
 {
-    class Animals
+    public class Animals
     {
         private string Name;
         public Size Size { get; set; }

@@ -4,9 +4,34 @@ using System.Text;
 
 namespace Classen
 {
-    class Wagon
+    public class Wagon
     {
+
+        public string Name { get; set; }
+        List<Animals> Animals = new List<Animals>();
         public virtual train Train { get; set; }
 
+        public Wagon(string name)
+        {
+
+            this.Name = name;
+
+
+        }
+
+       public bool Tryaddanimal(Animals animal)
+        {
+            int wheight = 0;
+            foreach (Animals Animal in Animals)
+            {
+                wheight = wheight + ((int)Animal.Size);
+            }
+            if (wheight + ((int)animal.Size) <= 10)
+            {
+                return true;
+
+            }
+            return false;
+        }
     }
 }
