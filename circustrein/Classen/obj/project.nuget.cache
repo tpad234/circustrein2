@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MVLs2SClNkh3qL+hXJtUF8ve7u1taAMFRS1cZgGmPDh7KsW3MgCSv5+f1ONGm/kNnG3A+mMhEdj9R8CvwZu3KQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\timdi\\source\\repos\\circustrein\\circustrein2\\circustrein\\Classen\\Classen.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\timdi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

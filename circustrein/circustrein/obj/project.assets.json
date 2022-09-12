@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Classen/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Classen.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Classen.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Classen/1.0.0": {
+      "type": "project",
+      "path": "../Classen/Classen.csproj",
+      "msbuildProject": "../Classen/Classen.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Classen >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\timdi\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\timdi\\source\\repos\\circustrein\\circustrein2\\circustrein\\Classen\\Classen.csproj": {
+              "projectPath": "C:\\Users\\timdi\\source\\repos\\circustrein\\circustrein2\\circustrein\\Classen\\Classen.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

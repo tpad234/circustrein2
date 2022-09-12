@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Class\" />
+    <ProjectReference Include="..\Classen\Classen.csproj" />
   </ItemGroup>
 
 </Project>

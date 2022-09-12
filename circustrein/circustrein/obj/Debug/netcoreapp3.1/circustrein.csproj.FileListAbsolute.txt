@@ -11,3 +11,6 @@ C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj
 C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.dll
 C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.pdb
 C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.genruntimeconfig.cache
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\bin\Debug\netcoreapp3.1\Classen.dll
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\bin\Debug\netcoreapp3.1\Classen.pdb
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\circustrein\obj\Debug\netcoreapp3.1\circustrein.csproj.CopyComplete

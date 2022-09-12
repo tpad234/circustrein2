@@ -1,0 +1,9 @@
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\bin\Debug\netstandard2.0\Classen.deps.json
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\bin\Debug\netstandard2.0\Classen.dll
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\bin\Debug\netstandard2.0\Classen.pdb
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\obj\Debug\netstandard2.0\Classen.csprojAssemblyReference.cache
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\obj\Debug\netstandard2.0\Classen.csproj.CoreCompileInputs.cache
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\obj\Debug\netstandard2.0\Classen.AssemblyInfoInputs.cache
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\obj\Debug\netstandard2.0\Classen.AssemblyInfo.cs
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\obj\Debug\netstandard2.0\Classen.dll
+C:\Users\timdi\source\repos\circustrein\circustrein2\circustrein\Classen\obj\Debug\netstandard2.0\Classen.pdb
