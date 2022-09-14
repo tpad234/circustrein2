@@ -39,8 +39,8 @@ namespace Classen
             else
             {
                 Animals.Add(new Animals(animal.Name, animal.Size, animal.Dieet));
-            }
             return true;
+            }
         }
     }
 }

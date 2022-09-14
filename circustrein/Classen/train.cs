@@ -15,13 +15,16 @@ namespace Classen
         {
             this.name = name;
 
+            List<Wagon> Wagons = new List<Wagon>();
+            List<Animals> animals = new List<Animals>();
         }
 
         public static train Maketrain()
         {
 
             train T = new train("train 1");
-
+            T.Creatanimal();
+            T.Filltrain();
             return T;
         }
 
@@ -59,9 +62,13 @@ namespace Classen
         }
         public void Filltrain()
         {
+            if (Wagons.Count == 0)
+            {
+                Addwagon(0);
+            }
             foreach (Animals animal in animals)
             {
-                    int count = 0;
+                int count = 0;
                 foreach (Wagon wagon in Wagons)
                 {
                     count++;
@@ -69,6 +76,7 @@ namespace Classen
                     if (Doesitfit == false)
                     {
                         Addwagon(count);
+                       
                     }
                     else if (Doesitfit == true)
                     {
