@@ -30,12 +30,11 @@ namespace Classen
 
             Wagons.Add(new Wagon("wagon" + count));
         }
-        public void Addanimal(string name, Size size, Dieet dieet )
+        public void Addanimaltolist (string name, Size size, Dieet dieet )
         {
 
             animals.Add(new Animals(name, size, dieet));
         }
-
         public void Creatanimal()
         {
             int count = 0;
@@ -43,31 +42,37 @@ namespace Classen
             {
                 count++;
 
-                Addanimal("olifant", Size.large, Dieet.herbivoor);
+                Addanimaltolist("olifant", Size.large, Dieet.herbivoor);
             }
             for (int i = 0; i < 3; i++)
             {
                 count++;
 
-                Addanimal("paard", Size.medium, Dieet.herbivoor);
+                Addanimaltolist("paard", Size.medium, Dieet.herbivoor);
             }
             for (int i = 0; i < 1; i++)
             {
                 count++;
 
-                Addanimal("piranja", Size.smal, Dieet.carnivor);
+                Addanimaltolist("piranja", Size.smal, Dieet.carnivor);
             }
         }
         public void Filltrain()
         {
             foreach (Animals animal in animals)
             {
+                    int count = 0;
                 foreach (Wagon wagon in Wagons)
                 {
-                    wagon.Tryaddanimal(animal);
-                    if (true)
+                    count++;
+                    bool Doesitfit  =  wagon.Tryaddanimal(animal);
+                    if (Doesitfit == false)
                     {
-
+                        Addwagon(count);
+                    }
+                    else if (Doesitfit == true)
+                    {
+                      //alles goed gegaan
                     }
                 }
             }  

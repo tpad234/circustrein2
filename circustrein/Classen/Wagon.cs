@@ -13,7 +13,7 @@ namespace Classen
 
         public Wagon(string name)
         {
-
+            
             this.Name = name;
 
 
@@ -26,12 +26,21 @@ namespace Classen
             {
                 wheight = wheight + ((int)Animal.Size);
             }
-            if (wheight + ((int)animal.Size) <= 10)
+            if (wheight + ((int)animal.Size) >= 10)
             {
-                return true;
+                return false;
 
             }
-            return false;
+            else if (animal.WouldEatAnimal(animal, Animals) == false)
+            {
+                return false;
+
+            }
+            else
+            {
+                Animals.Add(new Animals(animal.Name, animal.Size, animal.Dieet));
+            }
+            return true;
         }
     }
 }
