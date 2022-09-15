@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "circustrein", "circustrein\circustrein.csproj", "{4684AFE6-3E92-41D1-A933-CB0A9042D5FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "circustrein", "circustrein\circustrein.csproj", "{4684AFE6-3E92-41D1-A933-CB0A9042D5FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classen", "Classen\Classen.csproj", "{219C1386-531F-4957-A5C3-DAEDF482AF3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classen", "Classen\Classen.csproj", "{219C1386-531F-4957-A5C3-DAEDF482AF3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{C589B637-57B6-448F-AF81-D1F4D5283495}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{219C1386-531F-4957-A5C3-DAEDF482AF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{219C1386-531F-4957-A5C3-DAEDF482AF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{219C1386-531F-4957-A5C3-DAEDF482AF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C589B637-57B6-448F-AF81-D1F4D5283495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C589B637-57B6-448F-AF81-D1F4D5283495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C589B637-57B6-448F-AF81-D1F4D5283495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C589B637-57B6-448F-AF81-D1F4D5283495}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
