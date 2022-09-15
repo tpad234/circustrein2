@@ -26,7 +26,7 @@ namespace Classen
             {
                 wheight = wheight + ((int)Animal.Size);
             }
-            if (wheight + ((int)animal.Size) >= 10)
+            if (wheight + ((int)animal.Size) > 10)
             {
                 return false;
 

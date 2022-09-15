@@ -42,11 +42,11 @@ namespace Classen
 
                     else if (Animal.Dieet == Dieet.herbivoor)
                     {
-                        if (animal.Dieet == Dieet.carnivor || animal.Size > Animal.Size)
+                        if (animal.Dieet == Dieet.carnivor && animal.Size > Animal.Size)
                         {
                             check = true;
                         }
-                        else if (animal.Dieet == Dieet.carnivor || animal.Size <= Animal.Size)
+                        else if (animal.Dieet == Dieet.carnivor && animal.Size <= Animal.Size)
                         {
                             check = false;
                         }

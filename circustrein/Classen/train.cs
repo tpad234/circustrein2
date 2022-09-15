@@ -69,20 +69,34 @@ namespace Classen
             foreach (Animals animal in animals)
             {
                 int count = 0;
+                bool Doesitfit = false;
                 foreach (Wagon wagon in Wagons)
                 {
-                    count++;
-                    bool Doesitfit  =  wagon.Tryaddanimal(animal);
                     if (Doesitfit == false)
                     {
-                        Addwagon(count);
-                       
+
+                    count++;
+                    Doesitfit =  wagon.Tryaddanimal(animal);
                     }
+                }
+                    if (Doesitfit == false)
+                    {
+                    Addwagon(count);
+                    foreach (Wagon wagon in Wagons)
+                    {
+                        if (Doesitfit == false)
+                        {
+
+                            count++;
+                            Doesitfit = wagon.Tryaddanimal(animal);
+                        }
+                    }
+
+                }
                     else if (Doesitfit == true)
                     {
                       //alles goed gegaan
                     }
-                }
             }  
            
         }
