@@ -9,8 +9,8 @@ namespace Classen
         const int c_nrOfElephants = 2;
         public string name;
 
-        List<Wagon> Wagons = new List<Wagon>();
-        List<Animals> animals = new List<Animals>();
+        public List<Wagon> Wagons = new List<Wagon>();
+        public List<Animals> animals = new List<Animals>();
         public train(string name)
         {
             this.name = name;
