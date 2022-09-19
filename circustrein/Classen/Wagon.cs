@@ -8,7 +8,7 @@ namespace Classen
     {
 
         public string Name { get; set; }
-        List<Animals> Animals = new List<Animals>();
+       public List<Animals> animals = new List<Animals>();
         public virtual train Train { get; set; }
 
         public Wagon(string name)
@@ -22,23 +22,23 @@ namespace Classen
        public bool Tryaddanimal(Animals animal)
         {
             int wheight = 0;
-            foreach (Animals Animal in Animals)
+            foreach (Animals Animal in animals)
             {
                 wheight = wheight + ((int)Animal.Size);
             }
-            if (wheight + ((int)animal.Size) > 10)
+            if (wheight + ((int)animal.Size) >10)
             {
                 return false;
 
             }
-            else if (animal.WouldEatAnimal(animal, Animals) == false)
+            else if (Animals.WouldEatAnimal(animal, animals) == false)
             {
                 return false;
 
             }
             else
             {
-                Animals.Add(new Animals(animal.Name, animal.Size, animal.Dieet));
+                animals.Add(new Animals(animal.Name, animal.Size, animal.Dieet));
             return true;
             }
         }

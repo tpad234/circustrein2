@@ -20,7 +20,7 @@ namespace Classen
 
 
         }
-        public bool WouldEatAnimal(Animals animal, List<Animals> animals)
+        static public bool WouldEatAnimal(Animals animal, List<Animals> animals)
         {
             bool check = true;
             foreach (Animals Animal in animals)
@@ -36,19 +36,19 @@ namespace Classen
                         }
                         else if (animal.Dieet == Dieet.carnivor)
                         {
-                            check = true;
+                            check = false;
                         }
                     }
 
                     else if (Animal.Dieet == Dieet.herbivoor)
                     {
-                        if (animal.Dieet == Dieet.carnivor && animal.Size > Animal.Size)
-                        {
-                            check = true;
-                        }
-                        else if (animal.Dieet == Dieet.carnivor && animal.Size <= Animal.Size)
+                        if (animal.Dieet == Dieet.carnivor && animal.Size >= Animal.Size)
                         {
                             check = false;
+                        }
+                        else if (animal.Dieet == Dieet.carnivor && animal.Size < Animal.Size)
+                        {
+                            check = true;
                         }
                         else if (animal.Dieet == Dieet.herbivoor)
                         {

@@ -6,7 +6,7 @@ namespace Classen
 {
     public class train
     {
-        // private int eendID;
+        const int c_nrOfElephants = 2;
         public string name;
 
         List<Wagon> Wagons = new List<Wagon>();
@@ -41,7 +41,7 @@ namespace Classen
         public void Creatanimal()
         {
             int count = 0;
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < c_nrOfElephants; i++)
             {
                 count++;
 

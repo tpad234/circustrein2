@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "circustrein", "circustrein\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classen", "Classen\Classen.csproj", "{219C1386-531F-4957-A5C3-DAEDF482AF3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{C589B637-57B6-448F-AF81-D1F4D5283495}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassenTests", "ClassenTests\ClassenTests.csproj", "{08FB39F9-AF38-42FC-8CB4-7B8224E3976A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{219C1386-531F-4957-A5C3-DAEDF482AF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{219C1386-531F-4957-A5C3-DAEDF482AF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{219C1386-531F-4957-A5C3-DAEDF482AF3A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C589B637-57B6-448F-AF81-D1F4D5283495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C589B637-57B6-448F-AF81-D1F4D5283495}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C589B637-57B6-448F-AF81-D1F4D5283495}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C589B637-57B6-448F-AF81-D1F4D5283495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FB39F9-AF38-42FC-8CB4-7B8224E3976A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FB39F9-AF38-42FC-8CB4-7B8224E3976A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FB39F9-AF38-42FC-8CB4-7B8224E3976A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FB39F9-AF38-42FC-8CB4-7B8224E3976A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
