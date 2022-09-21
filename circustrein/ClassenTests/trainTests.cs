@@ -8,19 +8,19 @@ using Classen.Enum;
 namespace Classen.Tests
 {
     [TestClass()]
-    public class trainTests
+    public class TrainTests
     {
         [TestMethod()]
         public void FilltrainTestsenatio1()
         {
 
-            train T = new train("trein1");
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            Train T = new Train("trein1");
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
 
 
             // Act
@@ -37,16 +37,16 @@ namespace Classen.Tests
         public void FilltrainTestsenario2()
         {
 
-            train T = new train("trein1");
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
+            Train T = new Train("trein1");
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
             // Act
             T.Filltrain();
 
@@ -61,13 +61,13 @@ namespace Classen.Tests
         public void FilltrainTestsenario3()
         {
 
-            train T = new train("trein1");
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
+            Train T = new Train("trein1");
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
             // Act
             T.Filltrain();
 
@@ -83,18 +83,18 @@ namespace Classen.Tests
         public void FilltrainTestsenario4()
         {
 
-            train T = new train("trein1");
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
+            Train T = new Train("trein1");
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
             // Act
             T.Filltrain();
 
@@ -109,12 +109,12 @@ namespace Classen.Tests
         public void FilltrainTestsenario5()
         {
 
-            train T = new train("trein1");
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
+            Train T = new Train("trein1");
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
 
             // Act
             T.Filltrain();
@@ -130,14 +130,14 @@ namespace Classen.Tests
         public void FilltrainTestsenario6()
         {
 
-            train T = new train("trein1");
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            Train T = new Train("trein1");
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
 
             // Act
             T.Filltrain();
@@ -153,25 +153,25 @@ namespace Classen.Tests
         public void FilltrainTestsenario7()
         {
 
-            train T = new train("trein1");
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
-            T.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            Train T = new Train("trein1");
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.smal, Dieet.carnivor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.large, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            T.Animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
 
             // Act
             T.Filltrain();

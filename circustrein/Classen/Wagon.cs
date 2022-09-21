@@ -9,7 +9,7 @@ namespace Classen
 
         public string Name { get; set; }
        public List<Animals> animals = new List<Animals>();
-        public virtual train Train { get; set; }
+        public virtual Train Train { get; set; }
 
         public Wagon(string name)
         {
@@ -27,7 +27,7 @@ namespace Classen
 
             foreach (Animals Animal in animals)
             {
-                wheight = wheight + ((int)Animal.Size);
+                wheight += ((int)Animal.Size);
             }
 
             if (wheight + ((int)animal.Size) <= 10 && !animal.WouldEatAnimal(animals))

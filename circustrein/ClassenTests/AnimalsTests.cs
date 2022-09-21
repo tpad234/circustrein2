@@ -11,7 +11,7 @@ namespace Classen.Tests
     public class AnimalsTests
     {
         [TestMethod()]
-        public void WouldEatAnimalTestherbivoormediumtocarnivoormedium()
+        public void WouldEatAnimalHerbivoormediumtoCarnivoormediumTrue()
         {
 
             List<Animals> animals = new List<Animals>();
@@ -60,15 +60,15 @@ namespace Classen.Tests
         {
 
             List<Animals> animals = new List<Animals>();
-            Animals animal1 = new Animals("animal1", Size.smal, Dieet.carnivor);
-            animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            Animals animal1 = new Animals("animal1", Size.medium, Dieet.carnivor);
+            animals.Add(new Animals("animal2", Size.smal, Dieet.herbivoor));
 
             // Act
             bool wouldeatanimal = animal1.WouldEatAnimal( animals);
 
 
             // Assert
-            Assert.IsFalse(wouldeatanimal);
+            Assert.IsTrue(wouldeatanimal);
         }
     }
 }

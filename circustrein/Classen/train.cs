@@ -4,13 +4,18 @@ using Classen.Enum;
 
 namespace Classen
 {
-    public class train
+    public class Train
     {
         const int c_nrOfElephants = 2;
         public string name;
 
-        public List<Animals> animals = new List<Animals>();
+        private List<Animals> _animals = new List<Animals>();
 
+        public List<Animals> Animals
+        {
+            get { return _animals; }
+            set { _animals = value; }
+        }
         private List<Wagon> _wagons = new List<Wagon>();
 
         public List<Wagon> Wagons
@@ -20,15 +25,15 @@ namespace Classen
         }
 
 
-        public train(string name)
+        public Train(string name)
         {
             this.name = name;
         }
 
-        public static train Maketrain()
+        public static Train Maketrain()
         {
 
-            train T = new train("train 1");
+            Train T = new Train("train 1");
             T.Creatanimal();
             T.Filltrain();
             return T;
@@ -42,7 +47,7 @@ namespace Classen
         public void Addanimaltolist(string name, Size size, Dieet dieet)
         {
 
-            animals.Add(new Animals(name, size, dieet));
+            Animals.Add(new Animals(name, size, dieet));
         }
         public void Creatanimal()
         {
@@ -72,7 +77,7 @@ namespace Classen
             {
                 Addwagon(0);
             }
-            foreach (Animals animal in animals)
+            foreach (Animals animal in Animals)
             {
                 int wagonNr = 0;
                 bool AnimalPlaced = false;
