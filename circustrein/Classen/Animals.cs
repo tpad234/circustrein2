@@ -20,49 +20,34 @@ namespace Classen
 
 
         }
-        static public bool WouldEatAnimal(Animals animal, List<Animals> animals)
+        public bool WouldEatAnimal(List<Animals> animalsInWagon)
         {
-            bool check = true;
-            foreach (Animals Animal in animals)
+            bool problemFound = false;
+            foreach (Animals animal in animalsInWagon)
             {
-                if (check == true)
+                if (!problemFound)
                 {
-
-                    if (Animal.Dieet == Dieet.carnivor)
+                    if (animal.Dieet == Dieet.carnivor)//Dier in wagon is carnivore
                     {
-                        if (animal.Dieet == Dieet.herbivoor || animal.Size < Animal.Size)
+                        if (Dieet == Dieet.carnivor)//Dier zelf is carnivore
                         {
-                            check = false;
+                            problemFound = true;
                         }
-                        else if (animal.Dieet == Dieet.carnivor)
+                        else if (Size <= animal.Size)
                         {
-                            check = false;
+                            problemFound = true;
                         }
                     }
-
-                    else if (Animal.Dieet == Dieet.herbivoor)
+                    else
                     {
-                        if (animal.Dieet == Dieet.carnivor && animal.Size >= Animal.Size)
+                        if (Dieet == Dieet.carnivor && Size >= animal.Size)//Dier zelf is carnivore en dier in wagon is kleiner
                         {
-                            check = false;
+                            problemFound = true;
                         }
-                        else if (animal.Dieet == Dieet.carnivor && animal.Size < Animal.Size)
-                        {
-                            check = true;
-                        }
-                        else if (animal.Dieet == Dieet.herbivoor)
-                        {
-                            check = true;
-                        }
-
                     }
-                }
-                else
-                {
-                    check = false;
-                }
+                }                          
             }
-                return check;
+            return problemFound;
         }
 
     }

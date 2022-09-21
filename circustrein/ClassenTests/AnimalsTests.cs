@@ -19,11 +19,11 @@ namespace Classen.Tests
             animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
 
             // Act
-            bool wouldeatanimal = Animals.WouldEatAnimal(animal1, animals);
+            bool wouldeatanimal = animal1.WouldEatAnimal(animals);
 
 
             // Assert
-            Assert.IsFalse(wouldeatanimal);
+            Assert.IsTrue(wouldeatanimal);
         }
         [TestMethod()]
         public void WouldEatAnimalTestcarnivoorlargetocarnivoormdium()
@@ -34,11 +34,11 @@ namespace Classen.Tests
             animals.Add(new Animals("animal2", Size.medium, Dieet.carnivor));
 
             // Act
-            bool wouldeatanimal = Animals.WouldEatAnimal(animal1, animals);
+            bool wouldeatanimal = animal1.WouldEatAnimal(animals);
 
 
             // Assert
-            Assert.IsFalse(wouldeatanimal);
+            Assert.IsTrue(wouldeatanimal);
         }
         [TestMethod()]
         public void WouldEatAnimalTestcarnivoorsmaltocarnivoormdium()
@@ -49,11 +49,11 @@ namespace Classen.Tests
             animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
 
             // Act
-            bool wouldeatanimal = Animals.WouldEatAnimal(animal1, animals);
+            bool wouldeatanimal = animal1.WouldEatAnimal( animals);
 
 
             // Assert
-            Assert.IsTrue(wouldeatanimal);
+            Assert.IsFalse(wouldeatanimal);
         }
         [TestMethod()]
         public void WouldEatAnimalTestherbivoorsmaltoherbivoormdium()
@@ -64,11 +64,11 @@ namespace Classen.Tests
             animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
 
             // Act
-            bool wouldeatanimal = Animals.WouldEatAnimal(animal1, animals);
+            bool wouldeatanimal = animal1.WouldEatAnimal( animals);
 
 
             // Assert
-            Assert.IsTrue(wouldeatanimal);
+            Assert.IsFalse(wouldeatanimal);
         }
     }
 }

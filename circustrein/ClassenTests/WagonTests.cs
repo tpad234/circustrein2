@@ -47,5 +47,23 @@ namespace Classen.Tests
             // Assert
             Assert.IsFalse(wouldeatanimal);
         }
+        [TestMethod()]
+        public void TryAddHerbivorToCarnivor()
+        {
+            Wagon w = new Wagon("wagon1");
+            w.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            w.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+            w.animals.Add(new Animals("animal2", Size.medium, Dieet.herbivoor));
+
+
+            Animals animal1 = new Animals("animal1", Size.smal, Dieet.carnivor);
+
+            // Act
+            bool wouldeatanimal = w.Tryaddanimal(animal1);
+
+
+            // Assert
+            Assert.IsTrue(wouldeatanimal);
+        }
     }
 }

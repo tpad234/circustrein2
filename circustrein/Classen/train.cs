@@ -9,14 +9,20 @@ namespace Classen
         const int c_nrOfElephants = 2;
         public string name;
 
-        public List<Wagon> Wagons = new List<Wagon>();
         public List<Animals> animals = new List<Animals>();
+
+        private List<Wagon> _wagons = new List<Wagon>();
+
+        public List<Wagon> Wagons
+        {
+            get { return _wagons; }
+            set { _wagons = value; }
+        }
+
+
         public train(string name)
         {
             this.name = name;
-
-            List<Wagon> Wagons = new List<Wagon>();
-            List<Animals> animals = new List<Animals>();
         }
 
         public static train Maketrain()
@@ -33,7 +39,7 @@ namespace Classen
 
             Wagons.Add(new Wagon("wagon" + count));
         }
-        public void Addanimaltolist (string name, Size size, Dieet dieet )
+        public void Addanimaltolist(string name, Size size, Dieet dieet)
         {
 
             animals.Add(new Animals(name, size, dieet));
@@ -68,37 +74,24 @@ namespace Classen
             }
             foreach (Animals animal in animals)
             {
-                int count = 0;
-                bool Doesitfit = false;
+                int wagonNr = 0;
+                bool AnimalPlaced = false;
                 foreach (Wagon wagon in Wagons)
                 {
-                    if (Doesitfit == false)
+                    if (!AnimalPlaced)
                     {
-
-                    count++;
-                    Doesitfit =  wagon.Tryaddanimal(animal);
+                        wagonNr++;
+                        AnimalPlaced = wagon.Tryaddanimal(animal);
                     }
                 }
-                    if (Doesitfit == false)
-                    {
-                    Addwagon(count);
-                    foreach (Wagon wagon in Wagons)
-                    {
-                        if (Doesitfit == false)
-                        {
-
-                            count++;
-                            Doesitfit = wagon.Tryaddanimal(animal);
-                        }
-                    }
-
+                if (!AnimalPlaced)
+                {
+                    Addwagon(wagonNr);
+                    Wagons[Wagons.Count - 1].Tryaddanimal(animal);
                 }
-                    else if (Doesitfit == true)
-                    {
-                      //alles goed gegaan
-                    }
-            }  
-           
+            }
+
+
         }
 
     }

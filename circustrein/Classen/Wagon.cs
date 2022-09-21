@@ -22,25 +22,22 @@ namespace Classen
        public bool Tryaddanimal(Animals animal)
         {
             int wheight = 0;
+
+            bool succeeded = false;
+
             foreach (Animals Animal in animals)
             {
                 wheight = wheight + ((int)Animal.Size);
             }
-            if (wheight + ((int)animal.Size) >10)
-            {
-                return false;
 
-            }
-            else if (Animals.WouldEatAnimal(animal, animals) == false)
-            {
-                return false;
-
-            }
-            else
+            if (wheight + ((int)animal.Size) <= 10 && !animal.WouldEatAnimal(animals))
             {
                 animals.Add(new Animals(animal.Name, animal.Size, animal.Dieet));
-            return true;
+                succeeded = true;
             }
+
+            return succeeded;
+            
         }
     }
 }
